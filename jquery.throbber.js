@@ -114,10 +114,8 @@
 			show: function( o ) {
 				if( ! globalThrobber ) {
 					var options = $.extend( { 'global': true }, o );
-					globalThrobber = $('<div />', { 
-							'position': 'fixed',
-							'top': 0,
-							'left': 0
+					globalThrobber = $('<div />', {
+							'style': 'position: fixed; bottom: 50px; right: 50px;'
 						}
 					)
 					.appendTo( 'body' )
